@@ -1,0 +1,20 @@
+# ── Blood Cell Detector — Streamlit Cloud dependencies ──
+# CPU-only PyTorch to keep the image small (~200 MB vs ~2 GB with CUDA)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+
+# Ultralytics YOLO framework (pulls in most deps)
+ultralytics>=8.4.0
+
+# Streamlit
+streamlit>=1.30.0
+
+# Image processing — headless build avoids libGL issues on Linux
+opencv-python-headless
+
+# Data display
+pandas
+
+# Image loading
+Pillow
